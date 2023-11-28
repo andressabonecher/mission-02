@@ -44,7 +44,7 @@ li {
     color: rgb(255, 0, 0);
     text-decoration: underline;
     text-underline-offset: -30px;
-    cursor: url("/mission-02/icons/pizza-red-24px.png"), auto;
+    cursor: url('/icons/pizza-red-24px.png'), auto;
 }
 
 .nav-menu {
@@ -140,19 +140,19 @@ li {
 }
 
 .top-bg-image-home {
-    background-image: url('/mission-02/images/home-img.jpg');
+    background-image: url('/images/home-img.jpg');
 }
 
 .top-bg-image-contact {
-    background-image: url('/mission-02/images/drinks-img.jpg');
+    background-image: url('/images/drinks-img.jpg');
 }
 
 .top-bg-image-reservations {
-    background-image: url('/mission-02/images/drinks-img2.jpg');
+    background-image: url('/images/drinks-img2.jpg');
 }
 
 .top-bg-image-menu {
-    background-image: url('/mission-02/images/tiramisu.jpg');
+    background-image: url('/images/tiramisu.jpg');
 }
 
 /* CONTENT STYLING - HOME PAGE */
