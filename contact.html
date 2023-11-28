@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="script.js" defer></script> 
+    <title>Bella Cucina Ristorante - Contact</title>
+</head>
+<body>
+    <!-- PAGE HEADER -->
+    <header>
+
+        <!-- NAVIGATION BAR -->
+        <nav class="nav-bar">
+            <div class="nav-bar-branding">Bella Cucina</div>
+            <ul class="nav-bar-list nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">MENU</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT US</a></li>
+            </ul>
+
+        <!-- NAV HAMBURGER MENU -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="constrain-width">
+
+        <section id="contact">
+            <div class="top-bg-wrapper top-bg-image-contact">
+                <span class="title-border">
+                <h1 class="section-title">Contact Us </h1>
+                </span>
+            </div>
+
+            <div class="text-section-wrapper">
+                <div class="text-box">
+                    <h3>Hours</h2>
+                        <p>Tuesday to Sunday</p>
+                        <p>Lunch service: 12pm to 2pm</p>
+                        <p>Dinner service: 6pm to 10pm</p>
+                    </br>
+
+                    <h3>Address</h2>
+                    <address>
+                        199 Mission Ready Avenue - Auckland
+                    </address>
+                </div>
+
+                <div class="text-box">
+                    <h3>Get in touch</h2></br>
+                    <form action="mailto:info@bellacucina.co.nz" method="post">
+                    
+                    <div class="input">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required/>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required/>
+                    </div>
+                    <div class="input">
+                        <label for="people">Party size:</label>
+                        <input class="input" type="number" placeholder="How many people" required name="people"/>
+                    </div>
+                    <div class="comment">
+                        <label for="comment">Please write your message here</label>
+                    </div>
+                    <div class="comment">
+                        <textarea id="comment" name="comment" rows="5" cols="50"
+                            placeholder="Describe your enquiry or special requirements"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send</button>
+                    </form> 
+                </div>
+
+                
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="constrain-width footer">
+        <h4>Bella Cucina Ristorante</h4>
+    </footer>
+</body>
+</html>

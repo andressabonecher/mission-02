@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER & NAV BAR STYLING */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(9, 44, 12);
+}
+
+.nav-bar {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.nav-bar-branding {
+    color: white;
+    font-family: Garamond;
+    font-size: 1.5em;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-bar-list li>a, h4 {
+    font-family: 'Gill Sans', Calibri, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: 0.7s ease;
+}
+
+.nav-bar-list a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    text-underline-offset: -30px;
+    cursor: url("/mission-02/icons/pizza-red-24px.png"), auto;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg)
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg)
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(9, 44, 12);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 10px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+    .text-section-wrapper {
+        display: block;
+        max-height: fit-content;
+    }
+    .text-box {
+        display: block;
+        font: size 12px;;
+        height: max-content;
+    }
+}
+
+/* CONTENT STYLING - TOP BACKGROUND */
+
+.constrain-width {
+    margin: 0 auto;
+}
+
+.top-bg-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    z-index: -1;
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-bg-image-home {
+    background-image: url('/mission-02/images/home-img.jpg');
+}
+
+.top-bg-image-contact {
+    background-image: url('/mission-02/images/drinks-img.jpg');
+}
+
+.top-bg-image-reservations {
+    background-image: url('/mission-02/images/drinks-img2.jpg');
+}
+
+.top-bg-image-menu {
+    background-image: url('/mission-02/images/tiramisu.jpg');
+}
+
+/* CONTENT STYLING - HOME PAGE */
+.section-title {
+    color: white;
+    font-family: Garamond;
+    font-size: 3.6em;
+    font-weight: 400;
+    padding: 60px;
+    text-align: center;
+    letter-spacing: 10px;
+    transition: letter-spacing 1.5s ease-in-out;
+}
+
+.section-subtitle {
+    color: white;
+    font-family: 'Gill Sans', Calibri, sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.title-border {
+    border: solid rgb(150, 150, 150);
+    border-width: 1px 0;
+    width: 60%;
+    max-width: 800px;
+}
+
+.text-section-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 900px;
+    font-family: 'Gill Sans', Calibri, sans-serif;
+    color: rgb(9, 44, 12);
+}
+
+.text-box {
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 35px;
+    width: 40%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+    padding: 10px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* CONTENT STYLING - MENU PAGE */
+.text-menu-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Gill Sans', Calibri, sans-serif;
+    color: rgb(9, 44, 12);
+    padding: 50px;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+.text-menu-box {
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+.text-menu-subtitle {
+    margin: 25px 0 0 15px;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.menu-item {
+    display: block;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.price {
+    font-weight: 200;
+    padding-left: 15px;
+}
+
+/* CONTENT STYLING - CONTACT PAGE */
+#contact {
+    /* text-align: right; */
+    border: 2px solid rgb(9, 44, 12);
+    border-radius: 30px;
+}
+
+.input input {
+    width: 40%;
+    height: 30px;
+    padding: 4px;
+}
+
+.comment {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.submit-button {
+    width: 100%;
+    max-width: 150px;
+    margin-top: 10px;
+    height: 40px;
+    background-color: rgb(28, 130, 36);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    &:hover {
+        border-color: black;
+        background-color: rgb(9, 44, 12);
+        color: white;
+        transition: background-color 0.5s ease;
+    }
+}
+
+/* FOOTER STYLING */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: rgb(9, 44, 12);
+}
